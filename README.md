@@ -49,7 +49,7 @@ It enables you to write a text file and with some commands create a ILIAS questi
 
 + For gap questions:
 
-	Write your gap text. You can add as many spaces and new lines as you want. A gap is started by `[gap]` and ended by `[\gap]`. Between these you can place your answers. If there is only one answer a open gap is assumed. If there are multiple options, you get a choosing gap with the first answer assumed correct. These answers are seperated by a `;`.
+	Write your gap text. You can add as many spaces and new lines as you want. A gap is started by `[gap]` and ended by `[/gap]`. Between these you can place your answers. If there is only one answer a open gap is assumed. If there are multiple options, you get a choosing gap with the first answer assumed correct. These answers are seperated by a `;`.
 
 + Points:
 	
@@ -81,8 +81,8 @@ Write a short text about birds.
 Give the correct answers.
 
 
-Calculate 1 + 1 = [gap]2[\gap]
-The correct answer is [gap]correct;incorrect;also incorrect[\gap]
+Calculate 1 + 1 = [gap]2[/gap]
+The correct answer is [gap]correct;incorrect;also incorrect[/gap]
 ```
 
 Note: the file name will be `input_file_name.qti.xml` because the ILIAS of my institution requires "qti" somewhere in the file name (i really don't know why).
