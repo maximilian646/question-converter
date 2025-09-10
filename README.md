@@ -65,6 +65,24 @@ Which of the following answers are correct?
 - incorrect answer
 _ correct answer
 - another incorrect answer
+
+[q][m] Question 2
+Which of the following answers are correct?
+
+
+- incorrect answer
+_ correct answer
+_ correct answer
+
+[q][o][3] Question 3
+Write a short text about birds.
+
+[q][g][2] Question 4
+Give the correct answers.
+
+
+Calculate 1 + 1 = [gap]2[\gap]
+The correct answer is [gap]correct;incorrect;also incorrect[\gap]
 ```
 
 Note: the file name will be `input_file_name.qti.xml` because the ILIAS of my institution requires "qti" somewhere in the file name (i really don't know why).
