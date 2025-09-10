@@ -251,7 +251,7 @@ std::vector<std::string> getAnswers(std::string questionText){
 	for(int i = 0; i < output.size(); i++){
 		if(output.back().empty()){
 		       output.pop_back();
-		};
+		}	
 	};
 	
 	//erase possible lines with new line chars	
@@ -288,6 +288,7 @@ std::vector<std::string> getGapText(std::string questionText){
 	};
 	//fill output with text and gaps
 
+	printV(output);
 
 	return output;
 };
