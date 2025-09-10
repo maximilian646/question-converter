@@ -1,17 +1,26 @@
 #include "question.h"
 
 Question::Question(std::string questionName, int questionType, std::string questionText)
-	: m_questionName(questionName), m_questionType(questionType), m_questionText(questionText)
+	: m_questionName(questionName), 
+	m_questionType(questionType), 
+	m_questionText(questionText)
 {}	
 //simple constructor
 
 Question::Question(std::string questionName, int questionType, std::string questionText, std::vector<double> points)
-	: m_questionName(questionName), m_questionType(questionType), m_questionText(questionText),  m_points(points)
+	: m_questionName(questionName), 
+	m_questionType(questionType), 
+	m_questionText(questionText),  
+	m_points(points)
 {}
 //constructor open questions
 
 Question::Question(std::string questionName, int questionType, std::string questionText, std::vector<std::string> answers, std::vector<double> points)
-	: m_questionName(questionName), m_questionType(questionType), m_questionText(questionText), m_answers(answers), m_points(points)
+	: m_questionName(questionName), 
+	m_questionType(questionType), 
+	m_questionText(questionText), 
+	m_answers(answers), 
+	m_points(points)
 {}
 // constructor sc, mc and gap
 
