@@ -282,7 +282,7 @@ std::vector<std::string> getGapText(std::string questionText){
 
 	positions.push_back(questionText.length());
 	//get last possible position
-	
+
 	if(positions[1] == 0) positions.erase(positions.begin());
 	
 	for(int i = 0; i < positions.size() - 1; i++){

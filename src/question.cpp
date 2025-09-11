@@ -34,37 +34,37 @@ std::ostream& operator<<(std::ostream& os, const Question& obj){
 	return os;	
 };	
 
-void Question::printAnswers(){
+void Question::printAnswers() const{
 
 	for(auto i : m_answers){
 		std::cout << i << std::endl;
 	}	
 };
 
-void Question::printPoints(){
+void Question::printPoints() const{
 
 	for(auto i : m_points){
 		std::cout << i << std::endl;
 	}	
 };
 
-std::string Question::name(){
+std::string Question::name() const{
 	return m_questionName;
 };
 
-int Question::type(){
+int Question::type() const{
 	return m_questionType;
 };
 
-std::string Question::text(){
+std::string Question::text() const{
 	return m_questionText;
 };
 
-std::vector<std::string> Question::answers(){
+std::vector<std::string> Question::answers() const{
 	return m_answers;
 };
 
-std::vector<double> Question::points(){
+std::vector<double> Question::points() const{
 	return m_points;
 };
 
