@@ -26,13 +26,13 @@ class Question{
 
 		friend std::ostream& operator<<(std::ostream& os, const Question& obj);
 
-		void printAnswers();
-		void printPoints();
-		std::string name();
-		int type();
-		std::string text();
-		std::vector<std::string> answers();
-		std::vector<double> points();
+		void printAnswers() const;
+		void printPoints() const;
+		std::string name() const;
+		int type() const;
+		std::string text() const;
+		std::vector<std::string> answers() const;
+		std::vector<double> points() const;
 		
 		
 
