@@ -280,15 +280,15 @@ std::vector<std::string> getGapText(std::string questionText){
 	};
 	//fill positions with indices of "[gap]" or "[/gap]"
 
-	positions.push_back(questionText.length() - 1);
+	positions.push_back(questionText.length());
+	//get last possible position
+	
 	if(positions[1] == 0) positions.erase(positions.begin());
 	
 	for(int i = 0; i < positions.size() - 1; i++){
 		output.push_back(questionText.substr(positions[i], positions[i+1] - positions[i]));
 	};
 	//fill output with text and gaps
-
-	printV(output);
 
 	return output;
 };
