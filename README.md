@@ -85,6 +85,7 @@ Calculate 1 + 1 = [gap]2[/gap]
 The correct answer is [gap]correct;incorrect;also incorrect[/gap]
 ```
 
-Notes: 
+## Notes: 
+
 	+ the file name will be `input_file_name.qti.xml` because the ILIAS of my institution requires "qti" somewhere in the file name (i really don't know why).
 	+ if you compile this yourself, use the  `-std=c++20` flag as it is required by `std::format`
