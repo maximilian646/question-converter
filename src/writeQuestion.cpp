@@ -134,6 +134,11 @@ std::string getPresentation(Question& question){
                             answers[i].erase(0,next + 1);
                         };
                         //get items
+			for(int i = 0; i < items.size(); i++){
+				while(items[i].front() == ' ') items[i].erase(0,1);
+				while(items[i].back() == ' ') items[i].pop_back();
+			}
+			//erase leading and trailing whitespace
 
                         for(int j = 0; j < items.size(); j++){
                             itemPresentation.append(std::format("<response_label ident=\"{}"
