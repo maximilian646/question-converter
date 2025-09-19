@@ -348,10 +348,10 @@ std::vector<double> getPointsMC(std::string questionText){
 	for(auto answer : answers){
 		switch (answer[0]){
 			case '_':
-				output.push_back(1.0 * multiplier);
+				output.push_back(1.0);
 				break;
 			case '-':
-				output.push_back(-1.0 * multiplier);
+				output.push_back(-1.0);
 				break;
 		};
 	};
@@ -362,19 +362,19 @@ std::vector<double> getPointsMC(std::string questionText){
 	double sum = 0;
 	for(int i = 0; i < numAnswers - 1; i++){
 		output[i] = output[i]/numAnswers;
-		output[i] = trunc(output[i] * 100)/100;
+		output[i] = trunc(output[i] * 100);
 		//round 2 decimal places
 		sum += std::abs(output[i]);
 		//get sum of points of all but the last element
 	};
 
-	output[output.size() - 1] = (multiplier - sum) * output[output.size() - 1]/std::abs(output[output.size() - 1]);
-/*	
+	output[output.size() - 1] = (100 - sum) * output[output.size() - 1]/std::abs(output[output.size() - 1]);
+
 	for(int i = 0; i < output.size(); i++){
 		output[i] *= multiplier;
+		output[i] /= 100;
 	};
 	//multiply points by desired maximum points
-	*/
 
 	return output;
 };
