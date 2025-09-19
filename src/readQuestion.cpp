@@ -498,16 +498,17 @@ std::vector<double> getPointsGap(std::string questionText){
 
 	double sum = 0;
 	for(int i = 0; i < numGaps - 1; i++){
-		output.push_back(trunc(100/numGaps)/100);
+		output.push_back(trunc(100/numGaps));
 		//round 2 decimal places
-		sum += trunc(100/numGaps)/100;
+		sum += trunc(100/numGaps);
 		//get sum of points of all but the last element
 	};
 
-	output.push_back(1.0 - sum);
+	output.push_back(100.0 - sum);
 	
 	for(int i = 0; i < output.size(); i++){
 		output[i] *= multiplier;
+		output[i] /= 100;
 	};
 	//multiply points by desired maximum points
 
